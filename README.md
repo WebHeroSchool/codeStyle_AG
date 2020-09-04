@@ -39,14 +39,14 @@ alert('Привет');
 ```javascript
 // плохо
 function avg (a) {
-	let s = a.reduce((x, y) => x + y)
-	return s / a.length
+  let s = a.reduce((x, y) => x + y)
+  return s / a.length
 }
 
 // хорошо
 function averageArray (array) {
-	let sum = array.reduce((number, currentSum) => number + currentSum)
-	return sum / array.length
+  let sum = array.reduce((number, currentSum) => number + currentSum)
+  return sum / array.length
 }
 ```
 
@@ -88,10 +88,10 @@ const usernames = [];
 
 // хорошо
 const users = [
-        { name: "Bob", id: 1 },
-        { name: "Jane", id: 2 },
-        { name: "Fred", id: 3 }
-    ];
+  { name: "Bob", id: 1 },
+  { name: "Jane", id: 2 },
+  { name: "Fred", id: 3 }
+];
 const usernames = [];
 ```
 
@@ -109,15 +109,14 @@ alert( 0 === false ); // false, так как сравниваются разные типы
 ### 8. Блоки кода
 >Используйте фигурные скобки для кода, занимающего более одной строки
 
-
 ```javascript
 // плохо
 function sum() 
-	return false;
+  return false;
 
 // хорошо
 function sum() {
-	return false;
+  return false;
 }
 ```
 
